@@ -1,0 +1,549 @@
+/**
+ * Pages marché et application V2
+ */
+
+.market-app-page {
+    font-family: "Century Gothic", sans-serif;
+}
+
+h1 {
+  margin-bottom: 5px !important;
+}
+.subtitle{
+  color: white !important;
+}
+
+.header-button {
+  float: right;
+  margin: 0px auto 0px auto;
+  border-width: 0;
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.header-button .abutton {
+  text-decoration: none;
+  height: 63px;
+  display: table;
+  background: url("../images/buttonPopinBig.png") left center repeat-x;
+  color: black;
+  font-family: "Gothic", sans-serif;
+  font-size: 15px;
+  position: relative;
+  padding: 0 65px 0 18px;
+  line-height: 18px;
+  max-width: 200px;
+  text-align: left;
+}
+.header-button .abutton:hover {
+  background: url("../images/buttonBackHoverBig.png") left center repeat-x;
+  color: white;
+}
+
+.header-button .abutton .txt {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-button .abutton span.icn {
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  margin-top: -15px;
+  width: 28px;
+  height: 28px;
+  background: url("../images/downloadSpot.png") center center no-repeat;
+}
+
+  /* Boutons noirs */
+.market-app-page .black-link.black-link--arrow-2 a {
+    text-transform: none;
+}
+
+/**
+ * Bloc header (titre + btn 'contact us')
+ */
+.market-app-page.term-listing-heading > .taxonomy-term {
+    overflow: hidden;
+    padding: 0;
+}
+.market-app-page .term-listing-heading .rightBlock {
+    right: -15px;
+}
+.market-app-page.taxonomy-term {
+    height: auto;
+}
+
+.market-app-page #page-title {
+    font-size: 36px;
+}
+
+.market-app-page .term-listing-heading .article__header .button {
+    text-transform: none;
+    font-size: 16px;
+    line-height: 61px;
+}
+
+.market-app-page .term-listing-heading .rightBlock.contactUs p {
+    font-family: "Gothic", sans-serif;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.view-markets .views-row .taxonomy-term .content {
+    height: 133px;
+    display: block;
+}
+.view-markets .views-row .taxonomy-term .content > img {
+    object-fit: cover;
+    width: 100%; height: 133px!important;
+}
+
+/**
+ * Image cover haut de page
+ */
+     /* Override nécessaire car style custom n'apparaît pas en BO.
+        Mettre le champ image au format 'Full page' */
+.market-app-page .header-main-image.crop-cover {
+    height: 355px;
+    width: 100%;
+    overflow: hidden;
+}
+    /* scale cover image proportionately */
+.market-app-page .header-main-image.crop-cover img {
+    width: 100%;
+    position: static;  /* Override du 'position: absolute' appelé sur '.term-list-heading img', dans tpl taxonomy ; car impossible de modifier markup */
+    display: block; /* Override du 'display: none' appliqué sur les img en version mobile */
+    height: 100% !important;   /* Override du 'height: auto' appliqué sur toutes les img. Pr éviter régressions. */
+    object-fit: cover;
+}
+
+.compat-object-fit {
+    background-size: cover !important;
+    background-position: center center !important;
+}
+.compat-object-fit img {
+    opacity: 0!important;
+}
+
+/**
+ * Bloc description
+ */
+.market-app-page .applicationContent.brochure-desc {
+    border-top: none;
+}
+.market-app-page .leftColumn.description {
+    width: 100%;
+}
+
+/* Boutons 'Télécharger' */
+.market-app-page .footButtons {
+    float: right;
+    height: auto;
+}
+.market-app-page .footButtons > .brochure {
+    vertical-align: top;
+    width: 215px;
+    padding-right: 55px;
+    padding-top: 0;
+    display: table;
+}
+
+/*  Centre le txt du bouton vertic. (sur 1 ou +srs lignes)
+    sans regression sur reste du site */
+.market-app-page .footButtons > .brochure .btn-txt {
+    display: table-cell;
+    vertical-align: middle;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 0;
+    background: none;
+    position: static;
+    white-space: pre-wrap;
+}
+
+.market-app-page .applicationContent {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.market-app-page .applicationContent .description.leftColumn {
+    padding: 0;
+}
+.market-app-page .applicationContent .description ul {
+    margin-left: 15px;
+}
+
+.node-type-applicationv2 .applicationContent h2 {
+    margin-bottom: 30px;
+}
+
+.applicationContent--news {
+    padding-top: 52px;
+    padding-bottom: 32px;
+}
+
+/**
+ * WYSIWYG
+ */
+.market-app-page .wysiwyg h2 {
+    margin: 15px 0;
+}
+.market-app-page .wysiwyg > ul li {
+    list-style-type: none;
+    /*margin-left: -15px;*/
+}
+
+/* Couleur puce ul */
+.market-app-page .wysiwyg > ul li:before {
+    content: "\2022";
+    color: #db0014;
+    margin-right: 10px;
+    margin-left: -18px;
+}
+
+/* Couleur contenu souligné */
+.market-app-page .wysiwyg > ul li > u {
+    color: #db0014;
+}
+.market-app-page .wysiwyg .dnd-atom-wrapper > div {
+    text-align: center;
+}
+
+.market-app-page .wysiwyg .atom-align-left.dnd-atom-wrapper {
+    margin-right: 40px;
+}
+
+/* Bloc Témoignages wysiwyg */
+.testimonies .wysiwyg div.testimony-txt > p {
+    line-height: 1em;
+}
+.testimonies .wysiwyg div.testimony-txt > p:last-of-type {
+    margin-bottom: 0;
+}
+.testimonies .wysiwyg div.testimony-txt > p a {
+    color: #736569;
+}
+.testimonies .wysiwyg div.testimony-txt > p a:after {
+    content: "\203A";
+    margin-left: 5px;
+    color: #736569;
+}
+.wysiwyg .testimonial-video__body p {
+    color: white;
+}
+
+/**
+ * Bloc "Nos imprimantes"
+ */
+.market-app-page .our-printers {
+}
+
+/* Cible les boutons 'Voir tous les produits' */
+.market-app-page .our-printers .footButtons {
+    float: none;
+    overflow: hidden;
+}
+.market-app-page .our-printers .footButtons .black-link {
+    float: right;
+}
+
+/**
+ * Bloc Livre blanc
+ */
+
+.application__white-paper {
+    padding: 0;
+    position: relative;
+}
+.application__white-paper .white-paper__title {
+    font-family: "GothicBold", sans-serif;
+    font-size: 18px;
+    padding: 0;
+    position: absolute;
+    margin-top: 25px;
+    margin-bottom: 9px;
+}
+.market-app-page .application__white-paper { padding-right: 0; }
+.market-app-page .application__white-paper .left-box { width: 55%; }
+
+#white-papers .white-paper-teaser__title {
+    font-size: 22px;
+    color: #cb000b;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+#white-papers .white-paper__subtitle {
+    color: black;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/**
+ * Bloc Témoignages
+ */
+.testimonies {
+    background-color: #3b3b3b;
+    font-family: "Gothic", sans-serif;
+    color: #fff;
+}
+.testimonies .testimonies__grid {
+    margin-bottom: 90px;
+    margin-top: 30px;
+    height: 325px;
+}
+.written-testimony__title {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    height: 56px;
+    overflow: hidden;
+    font-size: 18px;
+}
+.testimonies .written-testimony__title a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.testimonies .content.testimony {
+    letter-spacing: .31em;
+    background-color: #fff;
+    height: 258px;
+}
+
+.testimonies .testimony-img {
+    height: 125px;
+    width: 125px;
+    display: inline-block;
+    letter-spacing: normal;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Ajoute un triangle blanc à droite de l'image */
+.testimonies .testimony-img:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 20px 15px 0;
+    border-color: transparent #fff transparent transparent;
+    transform: translateY(-50%);
+}
+
+.testimonies .testimony-img img {
+    height: 125px !important;
+    width: 100%;
+    position: static;
+    object-fit: cover;
+}
+
+.testimonies .testimony-txt {
+    letter-spacing: normal;
+    color: #fff;
+    padding: 0 14px;
+    vertical-align: middle;
+}
+
+.node-temoignage-ecrit {
+    margin-bottom: 26px;
+
+}
+
+.node-temoignage-ecrit:first-child {
+    padding-right: 10px;
+}
+.node-temoignage-ecrit:last-child {
+    padding-left: 10px;
+}
+
+.testimonies__case-studies-link {
+    text-align: center;
+    margin-top: 20px;
+}
+.node-type-applicationv2 .testimonies__case-studies-link a {
+    height:46px;
+    line-height: 46px;
+    text-transform: uppercase;
+}
+
+/* Témoignage Vidéo */
+.testimonial-video {
+    display: table;
+    margin-bottom: 25px;
+}
+.testimonial-video__video {
+    display: table-cell;
+    vertical-align: top;
+    width: 65%;
+}
+.testimonial-video__video iframe {
+    width: 100%;
+    height: 370px;
+}
+.testimonial-video__body {
+    display: table-cell;
+    vertical-align: top;
+    width: 35%;
+    padding: 40px 0px 0px 30px;
+    color: white;
+    line-height: 20px;
+}
+.testimonial-video__title {
+    font-family: "GothicBold", sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+    .testimonial-video__video iframe {
+        height: 222px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .testimonies .grid-table {
+        display: block;
+        width: 100%;
+    }
+    .testimonies .grid-table__cell {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .testimonies .testimony-txt {
+        padding: 30px 20px;
+        width: 100%;
+    }
+    .testimonies .testimony-img {
+        display: none;
+    }
+    .testimonies .testimonies__grid {
+        margin-bottom: 0;
+    }
+    .node-temoignage-ecrit:first-child {
+        padding-right: 0;
+    }
+    .node-temoignage-ecrit:last-child {
+        padding-left: 0;
+    }
+    .node-type-applicationv2 .testimonies__case-studies-link a {
+        width: 100%;
+    }
+}
+
+/* END Bloc Témoignages */
+
+
+/******* MEDIA QUERIES *******/
+
+@media screen and (max-width: 991px) {
+
+    /* Image cover haut de page */
+    .market-app-page .header-main-image.crop-cover {
+        height: 275px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Titre principal */
+    .market-app-page .article__header .leftBlock {
+        padding: 0;
+    }
+    .market-app-page #page-title {
+        font-size: 18px;
+    }
+
+    /* Image cover haut de page */
+    .market-app-page .header-main-image.crop-cover {
+        height: 140px;
+    }
+
+    /* Bloc description */
+    .market-app-page .leftColumn.description {
+        width: 100%;
+    }
+
+    /* Boutons 'Télécharger' */
+    .market-app-page .footButtons a.brochure {
+        max-width: 255px;
+    }
+    .market-app-page .footButtons > a.popIn.content-btn {
+        padding-right: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .market-app-page .applicationContent, .market-app-page .application__white-paper {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .market-app-page .application__white-paper .left-box { width: 100%; }
+
+    /* Bloc Livre blanc */
+    .node-type-applicationv2 .white-paper__download-link a {
+        text-transform: uppercase;
+    }
+
+    /* Bloc Témoignages */
+    .written-testimony__title{
+        margin: 0;
+        font-size: 14px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .grid-table {
+        height: auto;
+    }
+    .testimonies .wysiwyg div.testimony-txt > p a {
+        text-align: right;
+        display: block;
+    }
+    .testimonies .testimonies__grid {
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .node-temoignage-ecrit {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .node-type-applicationv2 .testimonies__case-studies-link a {
+        height: auto;
+        line-height: normal;
+        line-height: normal;
+        text-align: left;
+        font-size: 13px;
+        padding: 5px 30px 5px 10px;
+    }
+    .testimonies .content.testimony {
+        height: auto;
+    }
+    .testimonial-video {
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+    }
+    .testimonial-video__video, .testimonial-video__body {
+        width: 100%;
+        display: block;
+    }
+    .testimonial-video__body {
+        padding: 10px 0;
+    }
+}

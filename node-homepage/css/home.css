@@ -1,0 +1,24 @@
+/**
+ * Surcharge du code Vigicorp de la page d'accueil.
+ * @author UmanIT
+ */
+
+/* Bloc de news en langue indonésienne */
+.news-bloc-id #newsSlider a.button.news-list {
+  bottom: -10px;
+  right: 0;
+}
+
+.page-home #newsSlider {
+  position: static;
+}
+
+.page-home #block-views-news-block, .page-home #block-views-news-block-1 {
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .slide_image > img {
+    width: 100% !important;
+  }
+}

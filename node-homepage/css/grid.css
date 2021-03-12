@@ -1,0 +1,59 @@
+/* Applique une sorte de grille Bootstrap.
+ * Utilisation de la classe grid au lieu de row,
+ * car la classe row existe déjà, mais pas dans le cadre de Bootstrap.
+ */
+
+.grid { margin: 0 -15px; }
+
+[class*="grid-"] {
+    padding: 0 15px;
+    float: left;
+}
+
+.grid-xs-12 { width: 100%; }
+.grid-xs-6 { width: 50%; }
+
+@media(min-width: 768px) {
+    .grid-sm-6 { width: 50%; }
+}
+@media(min-width: 992px) {
+    .grid-md-5 { width: 41.66666667%; }
+    .grid-md-6 { width: 50%; }
+    .grid-md-7 { width: 58.33333333%; }
+    .grid-md-12 { width: 100%; }
+}
+@media(min-width: 1200px) {
+    .grid-lg-6 { width: 50%; }
+}
+
+/*
+ * Grid avec alignement vertical
+ */
+.grid-table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 1px;
+    float: none;
+    padding: 0;
+}
+.grid-table__cell {
+    display: table-cell; vertical-align: middle;
+    float: none;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .grid-table {
+        display: block;
+        width: 100%;
+    }
+    .grid-table__cell {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+}

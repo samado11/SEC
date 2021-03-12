@@ -1,0 +1,517 @@
+/**
+ * Menu
+ */
+
+.mainHeader {
+}
+
+.mainHeader #mainMenuHolder #om-menu-maximenu > .leaf-contact-us {
+  display: none;
+}
+
+.mainHeader #mainMenuHolder #searchBox #searchForm.hide {
+  display: none !important;
+}
+
+/**
+ * Surcharge des controls du sous-menu mobile (formulaire de recherche, bouton retour, rappel du titre de l'item...)
+ */
+.mainHeader #searchBox {
+    z-index: 99;
+    display: none;
+}
+
+.mainHeader .back {
+  width: 40%;
+  height: 45px;
+  background: white;
+  float: left;
+  line-height: 45px;
+  background: #464646 linear-gradient(#5c5c5c, #050505) 0 0 repeat-x;
+  color: #FFFFFF;
+}
+
+.mainHeader .back span {
+  display: block;
+  line-height: inherit;
+  position: static;
+  top: initial;
+  height: auto;
+  background-color: transparent;
+}
+
+.mainHeader #mobileItem {
+  float: left;
+  height: 45px;
+  width: 60%;
+  line-height: 45px;
+  background: white;
+  font-family: GothicBold, sans-serif;
+  padding-left: 20px;
+}
+
+@media all and (min-width: 1024px) {
+
+  .mainHeader #mainMenuHolder #om-menu-maximenu > .leaf-contact-us {
+    display: inline-block;
+  }
+
+  /* Retrait des séparateurs d'items */
+  .mainHeader #mainMenuHolder #om-menu-maximenu > li,
+  .mainHeader #mainMenuHolder #searchBox {
+    background-image: none;
+  }
+
+  /* Lien contactez-nous */
+  .mainHeader #mainMenuHolder #om-menu-maximenu > li > .link-contact-us {
+    background: #00d88c linear-gradient(#00e291, #03a36f);
+    color: #FFFFFF;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 32px;
+  }
+
+  .mainHeader #mainMenuHolder #om-menu-maximenu > li > .link-contact-us {
+    padding-right: 11px !important;
+  }
+
+  .mainHeader--sticky #block-om-maximenu-om-maximenu-1 .om-maximenu-content {
+    top: 75px !important;
+  }
+
+  #mobileItem {
+    display: none;
+  }
+}
+
+/**
+ * Surcharge éléments produit et services
+ */
+.mainHeader #block-om-maximenu-om-maximenu-1 .leaf-products-services ul li {
+}
+
+.mainHeader #block-om-maximenu-om-maximenu-1 .leaf-products-services ul li .vocabulary-products-and-services .content .products-and-services__image {
+  display: none;
+}
+
+@media all and (min-width: 1024px) {
+
+  /* Sous-menus */
+  .block-views-id-abouts-block_2 .view-display-id-block_2 {
+    padding: 20px 25px;
+  }
+
+  .block-views-id-abouts-block_2 .view-display-id-block_2 .views-row {
+    margin: 6px;
+  }
+
+  .mainHeader .leaf-products-services ul {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgba(255, 255, 255, 0); /* fix bug bullet points w/ Edge 17 */
+  }
+
+  .mainHeader #block-om-maximenu-om-maximenu-1 .leaf-products-services ul li {
+    position: relative;
+    flex-basis: 230px;
+    -ms-flex: 0 0 27%;
+  }
+
+  .mainHeader #block-om-maximenu-om-maximenu-1 .leaf-products-services ul li .vocabulary-products-and-services {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  .mainHeader #block-om-maximenu-om-maximenu-1 .leaf-products-services ul li .vocabulary-products-and-services .content .products-and-services__image {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin-top: 0;
+    margin-left: 0;
+
+    float: none;
+    vertical-align: middle;
+  }
+
+  .mainHeader #block-om-maximenu-om-maximenu-1 .leaf-products-services ul li .vocabulary-products-and-services .content .products-and-services__image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+  }
+
+  .view-abouts .views-row:hover .taxonomy-term .content div, .view-abouts .views-row:hover .taxonomy-term .content h2.not-over {
+    opacity: 1;
+  }
+
+  .block-views-id-abouts-block_2 .view-display-id-block_2 .views-row {
+    height: 92px;
+  }
+
+  .block-views-id-abouts-block_2 .view-display-id-block_2 .views-row .taxonomy-term .content {
+    position: absolute;
+    height: auto;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  .block-views-id-abouts-block_2 .view-display-id-block_2 .views-row .taxonomy-term .content div.not-over {
+    display: inline-block;
+    position: static;
+    width: 50%;
+    height: 100%;
+    margin-left: 10px;
+
+    vertical-align: middle;
+    text-align: left;
+    font-size: 13px;
+  }
+
+  .block-views-id-abouts-block_2 .view-display-id-block_2 .views-row .taxonomy-term .content > img {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Surcharge éléments Marchés
+ */
+
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .om-maximenu-content{
+  top: 52px;
+}
+
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .om-maximenu-content{
+  top: 2px;
+}
+
+.leaf-markets .mainHeader__left-markets
+.leaf-ressources .mainHeader__left-markets{
+  display: none;
+}
+
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .market{
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: none;
+  background-image: url("../images/greyToggleR.png");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+}
+
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .market > span{
+  background-image: url("../images/greyToggleR.png");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  cursor: pointer;
+}
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .market{
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: none;
+}
+
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .om-maximenu-content .market > span,
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .om-maximenu-content .market > span{
+  height: 53px;
+  line-height: 53px;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 23px;
+  margin-bottom: 0;
+}
+
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .om-maximenu-content .market > span a,
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .om-maximenu-content .market > span a{
+  color: #201C1D;
+  text-transform: none;
+  font-family: "Gothic", sans-serif;
+  font-size: 14px;
+
+}
+
+#om-menu-maximenu-ul-wrapper {
+  position: relative;
+}
+
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .market ul,
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources-blog .market ul{
+  position: absolute;
+  top: 0;
+  background-color: #f2f2f2;
+  width: 100%
+}
+
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .market ul li,
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .market ul li{
+  border-top: 1px solid #E0E0E0;
+}
+
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .market ul li a,
+.mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .market ul li a{
+  font-family: "Gothic", sans-serif;
+  text-align: left;
+  height: 53px;
+  line-height: normal;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 23px;
+}
+
+@media all and (min-width: 1024px) {
+
+  .mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li > .om-link.link-products-services,
+  .mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li > .om-link.link-ressources,
+  .mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li > .om-link.link-markets {
+    background-position: right 12px center;
+  }
+
+  .mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li:hover > .om-link.link-products-services,
+  .mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li:hover > .om-link.ressources,
+  .mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li:hover > .om-link.markets {
+    background-position: right 12px center;
+  }
+
+  .mainHeader #mainMenuHolder #searchBox {
+    display: inline-block;
+    width: 60px;
+    padding-right: 18px;
+  }
+
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .block-evolis .content,
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .block-evolis .content{
+    height: 100%;
+  }
+
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .market,
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .market{
+    width: 100%;
+    height: 100%;
+    border-right: none;
+    background-color: white;
+    padding: 20px 0;
+    border-top: none;
+    background-image: none;
+  }
+
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .om-maximenu-content,
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .om-maximenu-content{
+    top: 103px;
+  }
+
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .om-maximenu-content .market > span,
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .om-maximenu-content .market > span{
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    height: auto;
+    line-height: normal;
+  }
+
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .om-maximenu-content .market > span a,
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .om-maximenu-content .market > span a{
+    color: #931A3E;
+    text-transform: uppercase;
+    font-family: GothicBold, sans-serif;
+    font-size: 12px;
+  }
+
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .market ul,
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .market ul{
+    width: 80%;
+    margin-left: 30px;
+    position: static;
+    top: auto;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0); /* fix bug bullet points w/ Edge 17 */
+  }
+
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .market ul li,
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .market ul li{
+    display: block;
+    height: 65px;
+    width: 48%;
+    margin-bottom: 8px;
+    float: left;
+    margin-right: 8px;
+    border-top: none;
+
+  }
+
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-markets .market ul li a,
+  .mainHeader #mainMenuHolder #om-menu-maximenu .leaf-ressources .market ul li a{
+    height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .leaf-markets .mainHeader__markets,
+  .leaf-ressources .mainHeader__markets{
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  }
+
+  /**
+   * Dans le sous-menu, menu de gauche des marchés
+   */
+  .leaf-markets .mainHeader__left-markets,
+  .leaf-ressources .mainHeader__left-markets{
+    display: block;
+    width: 30%;
+    background-color: #f2f2f2;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 40px;
+    color: rgba(255, 255, 255, 0); /* fix bug bullet points w/ Edge 17 */
+  }
+
+  .leaf-markets .mainHeader__left-market,
+  .leaf-ressources .mainHeader__left-market{
+    line-height: normal;
+    flex-grow: 1;
+    border-bottom: 1px solid white;
+  }
+
+  .leaf-markets .mainHeader__left-market a,
+  .leaf-ressources .mainHeader__left-market a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "GothicBold";
+    line-height: normal;
+    margin: 10px 0;
+    display: block;
+  }
+
+  .leaf-markets .mainHeader__left-market a:hover, .leaf-markets .mainHeader__left-market.active a,
+  .leaf-ressources .mainHeader__left-market a:hover, .leaf-ressources .mainHeader__left-market.active a{
+    color: #931A3E;
+  }
+
+  .om-maximenu .leaf-markets .om-maximenu-content .block-evolis,
+  .om-maximenu .leaf-ressources .om-maximenu-content .block-evolis{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/**
+ * Sous-menu "A propos d'Evolis"
+ */
+/* Oui maintenant c'est en desktop first... With love, Vigigi <3. */
+@media (max-width: 1024px) {
+
+  .topMenu > ul > li > ul, .topMenu > ul > li > .menu-block-evolis-partner-first-lvl ul {
+    background-color: #F2F2F2;
+    width: 100%;
+    height: calc(100vh - 52px);
+    box-shadow: none;
+  }
+
+  .topMenu > ul > li > .menu-block-evolis-partner-first-lvl ul li {
+    width: 100%;
+    height: 53px;
+    line-height: 53px;
+    margin: 0;
+    display: block;
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .topMenu > ul > li > .menu-block-evolis-partner-first-lvl ul li a {
+    height: 53px;
+    line-height: 53px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 23px;
+  }
+}
+
+/*----------  Variantes de menu ----------*/
+
+/* marge de la taille du menu sticky pour repousser le contenu */
+.mainHeader--sticky ~ .banner-promotion {
+  margin-top: 143px;
+}
+
+.banner-promotion{
+  height: 150px;
+}
+
+@media (max-width: 1024px) {
+  .banner-promotion{
+    height: inherit;
+    margin-top: 60px;
+  }
+
+  .banner-promotion a img {
+    width: 100%;
+  }
+}
+
+.mainHeader--sticky {
+  transition: height .5s;
+  position: fixed;
+  background-color: #F2F2F2;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 100;
+}
+
+.mainHeader--sticky #mainMenu {
+  transition: height .5s;
+  height: 75px;
+}
+
+.mainHeader--sticky #mainMenuHolder #searchBox #searchForm {
+  top: 74px;
+}
+
+.mainHeader--sticky #logo div {
+  transition: height .5s;
+  height: 75px;
+}
+
+.mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li {
+  transition: height .5s;
+  height: 75px;
+}
+
+.mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li > .om-link {
+  transition: height .5s;
+  height: 75px;
+  line-height: 75px;
+}
+
+body.i18n-fr .mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li > .om-link.link-products-services.link-products-services,
+body.i18n-fr .mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li > .om-link.link-ressources,
+.mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li > .om-link.link-markets {
+  background-position-y: 36px;
+}
+
+.mainHeader--sticky #mainMenuHolder #searchBox #trigger {
+  transition: height .5s;
+  height: 75px;
+}
+
+.mainHeader--sticky #mainMenuHolder #om-menu-maximenu > li > .link-contact-us {
+  height: 40px;
+  line-height: 40px;
+  margin-top: 17px;
+}

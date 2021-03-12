@@ -1,0 +1,193 @@
+/**
+ * Style pour la page listant les livres blancs.
+ */
+
+.white-paper {
+    font-family: "Gothic", sans-serif;
+    display: table;
+    padding: 0;
+}
+.white-paper .left-box {
+    vertical-align: bottom;
+}
+.white-paper .right-box {
+    vertical-align: bottom;
+}
+@media screen and (max-width: 480px) {
+    .white-paper {
+        display: block;
+    }
+    .white-paper .left-box {
+        display: block;
+        width: 100%;
+    }
+    .white-paper .left-box {
+        display: block;
+        width: 100%;
+    }
+}
+
+.white-paper .left-box img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+}
+.white-paper .white-paper__image {
+    /*width: 100%;*/
+    /*height: auto;*/
+    vertical-align: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width: 480px) {
+    .white-paper .white-paper__image {
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}
+
+.white-paper__content {
+    padding: 5px 0px 0px 0px;
+    font-size: 13px;
+    color: #000000;
+}
+.white-paper__content.wysiwyg h2 {
+    font-size: 22px;
+    color: #cb000b;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.white-paper__content ul {
+ margin-left: 20px;
+}
+
+.white-paper .footButtons {
+    padding: 0 24px 27px 74px;
+}
+.white-paper .footButtons .white-paper__download-link a {
+    height: 50px;
+    line-height: 50px;
+}
+@media screen and (max-width: 480px) {
+    .white-paper__download-link {
+        text-align: right;
+    }
+}
+
+/**
+ * Teaser
+ */
+.white-paper--teaser {}
+.white-paper--teaser .white-paper__content {
+    margin-top: 45px;
+}
+.white-paper--teaser .footButtons {
+    padding: 0;
+    width: 100%;
+}
+.white-paper--teaser .footButtons .left-box, .white-paper--teaser .footButtons .right-box {
+    vertical-align: middle;
+    width: auto;
+}
+.white-paper--teaser .footButtons .black-link {
+    padding-left: 24px;
+    padding-right: 20px;
+}
+.white-paper__more-link {
+    line-height: normal;
+    padding-left: 0;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.white-paper__more-link a {
+    font-size: 13px;
+    color: black;
+    line-height: normal;
+}
+.white-paper__more-link:after {
+    content: '›';
+    padding-left: 3px;
+    text-decoration: none;
+}
+
+/**
+ * Header page liste de livres blancs
+*/
+body[class^="page-"], body[class*="-white-papers"] .block-white-papers {
+    padding-top: 0;
+    font-family: "Gothic", sans-serif;
+    color: white;
+    min-height: 302px;
+    margin-bottom: 20px;
+    background-color: #cb000b;
+}
+.term-listing-heading {
+    max-width: 986px;
+    width: 100%;
+    margin: 0 auto;
+}
+body[class^="page-"], body[class*="-white-papers"] .block-white-papers .title {
+    color: white;
+}
+body[class^="page-"], body[class*="-white-papers"] .block-white-papers p {
+    color: white;
+}
+
+body[class^="page-"], body[class*="-white-papers"] .contactUs {
+    background-color: #cb000b;
+}
+body[class^="page-"], body[class*="-white-papers"] .contactUs .button-default--grey {
+    background-image: url("../images/buttonPopinBig.png") !important;
+    color: black !important;
+}
+
+body[class^="page-"], body[class*="-white-papers"] .contactUs .button-default--grey span {
+    background-image: url("../images/contactSpotGrey.png") !important;
+}
+
+body[class^="page-"], body[class*="-white-papers"] .block-white-papers .taxonomy-term {
+    padding-top: 0;
+}
+
+/**
+ * Surcharge crade Drupal
+ */
+body[class^="page-"], body[class*="-white-papers"] #page > .row {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+
+}
+body[class^="page-"], body[class*="-white-papers"] #page > .row:first-child {
+    background-color: #cb000b;
+}
+
+body[class^="page-"], body[class*="-white-papers"] #breadcrumb {
+    padding: 0 10px;
+    max-width: 986px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/******* MEDIA QUERIES *******/
+
+@media (max-width: 767px) {
+    .white-paper__more-link a {
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .white-paper__more-link:after {
+        content: '';
+    }
+    .white-paper .left-box {
+        width: 100%;
+    }
+    .white-paper--teaser .footButtons {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+}

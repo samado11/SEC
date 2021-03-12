@@ -1,0 +1,248 @@
+/**
+ * Styles spécifiques à la page Contact
+ * Beaucoup d'override du code vgc
+ */
+
+.contactFull .term-listing-heading .rightBlock { display: none; }
+.contactFull .term-listing-heading .leftBlock { padding: 0 0px; }
+
+.contactFull .webform-client-form,
+.contactFull .confirmation {
+  border: none;
+  background: none;
+}
+
+#contact-list .webform-client-form h2 {
+  padding: 0;
+}
+
+.contactFull .webform-client-form .big_label {
+  position: relative;
+}
+
+.contactFull .webform-client-form .fieldset-wrapper {
+  background-color: #ffffff;
+  border: none;
+}
+
+.contactFull .formBecomePartner .webform-client-form .fieldset-wrapper {
+  border: 1px solid #e3e3e3;
+}
+
+.contactFull .formBecomePartner .webform-client-form .fieldset-wrapper {
+  background-color: #f3f3f3;
+}
+
+.contactFull .webform-client-form .fieldset-wrapper,
+.contactFull .confirmation .fieldset-wrapper {
+  padding: 30px 20px;
+}
+
+.contactFull .webform-client-form .fieldset-wrapper.num:before {
+  content: none;
+}
+
+.contactFull .webform-client-form label.big_label,
+.confirmation label.big_label {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-self: center;
+  align-items: center;
+  min-height: 38px;
+  margin-bottom: 18px!important;
+  margin-top: 18px!important;
+}
+
+.contactFull .webform-client-form .big_label:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -50%; left: 0;
+  width: 38px; height: 37px;
+  transform: translateY(50%);
+
+  background: transparent url('../images/sprite_num.png') no-repeat left top;
+}
+
+.contactFull .webform-client-form .num_2.big_label:before {
+  background-position: -38px 0;
+}
+
+.contactFull .webform-client-form .num_3.big_label:before {
+  background-position: -76px 0;
+}
+
+.contactFull .webform-client-form .big_label h3,
+.contactFull .webform-client-form .big_label h2 {
+  padding: 0;
+  margin-bottom: 0!important;
+}
+
+.contactFull .webform-client-form .group_field {
+  width: 100%;
+}
+
+.contactFull .webform-client-form .group_field--inline {
+  letter-spacing: -.31em;
+}
+
+.contactFull .webform-client-form .group_field.city {
+  display: inline-block;
+  width: 50%;
+  letter-spacing: normal;
+}
+.contactFull .webform-client-form .group_field.zip {
+  display: inline-block;
+  width: 100%;
+  letter-spacing: normal;
+}
+
+.contactFull .webform-client-form .group_field.state {
+  width: 100%;
+}
+
+.contactFull .webform-client-form .fieldset-wrapper .textarea {
+  margin-bottom: 0;
+}
+.contactFull .webform-client-form .group_field.select,
+.contactFull .webform-client-form .group_field.select span {
+  width: 100%;
+  max-width: unset;
+}
+
+.contactFull .webform-client-form .group_field.city {
+  width: 100%;
+}
+
+.contactFull .webform-client-form .group_field.zip {
+  width: 50%;
+}
+
+.contactFull #addresses .market-listing {
+  display: none !important;
+  overflow: hidden;
+  width: 100%;
+  -webkit-transition: all .7s;
+  -moz-transition: all .7s;
+  -ms-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s;
+  padding: 30px 24px;
+  border: none;
+  -moz-box-shadow: 0px 0px 8px 0px #dddddd;
+  -webkit-box-shadow: 0px 0px 8px 0px #dddddd;
+  -o-box-shadow: 0px 0px 8px 0px #dddddd;
+  box-shadow: 0px 0px 8px 0px #dddddd;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#dddddd, Direction=NaN, Strength=8);
+}
+
+.contactFull #addresses .market-listing.show {
+  display: block !important;
+}
+
+.contactFull #addresses .market-listing {
+  border-top: 0;
+  margin: 0;
+}
+.contactFull #addresses .market-listing .columns.contactImage {
+  display: none;
+}
+
+.contactFull #addresses .market-listing .columns.local,
+.contactFull #addresses .market-listing .columns.contactDetails {
+  width: 100%;
+}
+
+.contactFull #addresses .market-listing h2 {
+  text-transform: initial;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.contactFull header.clearfix.term-listing-heading.marketHead.header-contact::before {
+  content: "";
+  top: -33px;
+  bottom: 0;
+  left: -10px;
+  right: -10px;
+  background-color: #db0014;
+  position: absolute;
+  z-index: -1;
+}
+
+.contactImage img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact__title {
+  margin: 18px 0;
+  font-size: 18px;
+  font-family: "GothicBold", sans-serif;
+  min-height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-self: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .contactFull {
+    background-image: none !important;
+  }
+  .contactFull.contactBecomePartner {
+    background-image: url("../images/pageRedband.jpg") !important;
+  }
+}
+
+@media screen and (min-width: 992px){
+
+  #page-wrapper.contactFull {
+    background-image: url('../images/pageRedband-contact.jpg');
+  }
+
+  .contactFull header.clearfix.term-listing-heading.marketHead.header-contact { min-height: 212px; }
+
+  .contactFull .term-listing-heading .leftBlock {
+    width: 55%;
+    padding: 0 24px;
+  }
+
+  .contactFull .term-listing-heading .rightBlock {
+    display: block;
+    min-width: 430px; min-height: 175px;
+    right: 0; top: 20px;
+    margin-bottom: 0;
+    padding: 30px 30px 25px !important;
+
+    transform: translateY(-25px);
+    background-color: #DC0014;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+  }
+
+  .contactFull .webform-client-form .group_field.city {
+    width: 50%;
+    padding-right: 10px;
+  }
+
+  .contactFull #addresses .market-listing {
+    padding: 50px 40px;
+  }
+
+  .contactImage img {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}

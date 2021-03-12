@@ -1,0 +1,144 @@
+/**
+ * Styles spécifiques à la page Marchés > Imprimantes à cartes plastiques
+ */
+
+/*  Override pour éviter régressions et surcharger class 'term-listing-heading'.
+    Cette class se trouve en doublon car la page 'marchés' est une taxonomy (donc elle en hérite auto.),
+    et la class est aussi utilisée sur header de l'article. */
+
+.page-card-printers {}
+
+/* Header page 'Card Printers' */
+.page-card-printers .term-listing-heading { margin-bottom: 0; }
+
+/* bloc de gauche */
+.page-card-printers .term-listing-heading .leftBlock { width: 55%; }
+
+/* bloc de droite */
+.page-card-printers .term-listing-heading .rightBlock {
+  display: block;
+  min-width: 430px; min-height: 175px;
+  right: 0;
+  margin-bottom: 0;
+  padding: 30px 30px 25px !important;
+
+  transform: translateY(-25px);
+  background-color: #DC0014;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+/* bloc de droite - image */
+.page-card-printers .term-listing-heading .rightBlockImg {
+  width: 430px; height: 175px;
+  background-image: url("../images/img-dwnld-brochure.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* texte img header */
+.page-card-printers .term-listing-heading .rightBlock .slogan {
+  width: 60%;
+  margin-bottom: 0;
+
+  text-transform: initial;
+  line-height: 21px;
+  font-family: "Gothic", sans-serif;
+  font-weight: 700;
+}
+
+/* bouton */
+.page-card-printers .term-listing-heading .rightBlock .button {
+  max-width: 80%;
+  height: 65px;
+
+  line-height: 65px;
+  transform: translateY(30%);
+  text-transform: initial;
+}
+
+
+/* Modale */
+.page-card-printers .modal { z-index: 1000; }
+
+/* override nul pour éviter les effets de bords (risque si on met des !important sur les helpers) */
+.page-card-printers .modal .m-t-0 {
+  margin-top: 0 !important;
+}
+
+.page-card-printers .modal-header h2 {
+  width: 70%;
+  font-family: "GothicBold", sans-serif;;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+[data-trigger="downloadBrochure"] input:focus {
+  outline: none;
+}
+
+/* Validation message */
+.validation-message {
+  text-align: right;
+  transform: translateY(-15px);
+  color: #e90025;
+}
+
+/***************************************************************/
+/*                        MEDIA QUERIES                        */
+/***************************************************************/
+
+@media all and (max-width: 1024px) {
+
+  /* bloc de gauche */
+  .page-card-printers .term-listing-heading .leftBlock { padding: 0 20px 0 0; }
+}
+
+@media all and (max-width: 960px) {
+
+  /* bloc de gauche */
+  .page-card-printers .term-listing-heading .leftBlock { width: 40%; }
+
+  /* Titre modale */
+  .page-card-printers .modal-header h2 { width: 100%; }
+}
+
+@media all and (max-width: 768px) {
+
+  .page-card-printers .term-listing-heading { margin-bottom: -25px; }
+
+  /* bloc de gauche */
+  .page-card-printers .term-listing-heading .leftBlock { width: 100%; }
+
+  /* bloc de droite */
+  .page-card-printers .term-listing-heading .rightBlock {
+    min-width: 100%;
+    margin-top: 25px; margin-bottom: 20px;
+    padding: 20px 15px 20px !important;
+    transform: initial;
+  }
+
+  /* texte img header */
+  .page-card-printers .term-listing-heading .rightBlock .slogan { width: 50%; }
+
+}
+
+@media all and (max-width: 480px) {
+
+  /* texte img header */
+  .page-card-printers .term-listing-heading .rightBlock .slogan { width: 100%; }
+
+  /* bouton Télécharger brochure - page produit */
+  .market-listing .btn { padding-top: 15px; }
+}
+@media all and (max-width: 991px) {
+
+  /* bouton Télécharger brochure - page produit */
+  .market-listing .btn {
+    padding-top: 0;
+    text-indent: -12px;
+  }
+}

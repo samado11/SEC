@@ -1,0 +1,272 @@
+/**
+ * Globals UmanIT, pour arrêter de toucher à celui de Vigicorp et reprendre une vie saine
+ */
+
+/**
+ * Boutons noirs et gris génériques
+ */
+.black-link a {
+    height: 40px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 13px;
+    line-height: 40px;
+    padding: 0 35px 0 22px;
+    position: relative;
+    z-index: 3;
+    color:#fff;
+    background: url("../images/buttonBack.png") 0 0 repeat-x;
+    background-position: center;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+}
+.black-link a:hover {
+    color: #FFF;
+    background: url("../images/buttonBackHoverBig.png") 0 0 repeat-x;
+    cursor: pointer;
+}
+@media (max-width: 480px) {
+    .black-link a {
+        line-height: normal;
+        height: auto;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+}
+
+.black-link--arrow-1 a:after {
+    text-transform: none;
+    display: block;
+    content: " ";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url("../images/backButton.png") center center no-repeat;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+    position: absolute;
+    line-height: 58px;
+    right: 12px;
+    top: 50%;
+    z-index: 1;
+    margin-top: -14px;
+}
+
+.black-link--arrow-2 a:after {
+    content: " ";
+    display: block;
+    width: 8px;
+    height: 9px;
+    background: url("../images/readMoreArrow.png") center center no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -4px;
+}
+
+.black-link--grey a {
+    background-image: url("../images/buttonPopinBig.png");
+    color: black;
+    cursor: pointer;
+}
+
+.black-link--grey-arrow-2 a:after {
+    content: " ";
+    display: block;
+    width: 8px;
+    height: 9px;
+    background: url("../images/readMoreArrow-black.png") center center no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -4px;
+}
+
+.black-link--grey-arrow-circle a:after {
+    content: " ";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url("../images/contactSpotGrey.png") center center no-repeat;
+    position: absolute;
+    top: 30%;
+    right: 35px;
+}
+
+/**
+ * Pseudo système de grid
+ */
+.table-box {
+    display: table;
+}
+.left-box {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+.right-box {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+@media screen and (max-width: 480px) {
+    .table-box {
+        display: block;
+    }
+    .left-box {
+        display: block;
+        width: 100%;
+    }
+    .right-box {
+        display: block;
+        width: 100%;
+    }
+}
+
+/**
+ * Pour masquer des éléments en mobile et en desktop
+ */
+@media (max-width: 480px) {
+    .hidden-mobile { display: none; }
+}
+
+@media (max-width: 992px) {
+    .hidden-tablet { display: none; }
+}
+
+@media (min-width: 481px) {
+    .hidden-desktop { display: none; }
+}
+
+
+/* refs #23456
+ * Surcharge pour les vidéo Wistia de la page des drivers qui ne sont pas nécessairement en 16/9
+ */
+.node-type-driver  {}
+.node-type-driver .wistia_responsive_padding {
+    position: static;
+    padding: 0!important;
+    margin-bottom: 15px;
+}
+.node-type-driver .wistia_responsive_wrapper {
+    position: static!important;
+}
+
+
+/*
+* RED Program / Resellers Status Page (#30237)
+*/
+
+/* Div global */
+.resellers-status__box {
+    font-family: "Gothic", sans-serif;
+    background:#FFF;
+    margin:0;
+    padding:28px;
+}
+
+/* Texte d'introduction */
+.resellers-status__intro-text {
+    font-size: 13px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Formulaire */
+.resellers-status__form {
+    margin-bottom: 25px;
+}
+
+/* Texte label du formulaire */
+.resellers-status__form label {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Input pour le code du revendeur */
+.resellers-status__form input[type="text"] {
+    padding: 10px;
+    font-size: 13px;
+    width: 50%;
+    background-color: #ffffff;
+    border: 2px solid #e8e8e8;
+}
+
+.resellers-status__form input[type="text"]::placeholder {
+    color: #b2aca7;
+}
+
+/* Bouton submit */
+.resellers-status__form input[type="submit"] {
+    padding: 10px;
+    border: 2px solid #e8e8e8;
+    border-left: none;
+    color: #931A3E;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Résultats */
+.resellers-status__results {
+    border: 1px solid #E8E8E8;
+    padding: 20px;
+}
+
+.resellers-status__results p.resellers-error {
+    font-size: 13px;
+    padding: 15px;
+}
+
+.resellers-status__results .image_result_form {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.resellers-status__results .text_result_form {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.resellers-status__results .image_result_form img {
+    width: 100%;
+}
+
+.resellers-status__results .text_result_form h4 {
+    font-family: "GothicBold", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.resellers-status__results .text_result_form p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.resellers-status__results .text_badge_reseller {
+    font-size: 16px;
+    text-align: center;
+}
+
+/**
+ * Surcharge du style de la chat box (en attendant de trouver un endroit plus approprié)
+ */
+
+.embedded-service .channelmenu {
+  z-index: 1000 !important;
+}
+
+.embeddedServiceSidebar.layout-docked .dockableContainer,
+.embeddedServiceSidebar.layout-float .dockableContainer {
+  top: 50px !important;
+}
+
+.embeddedServiceSidebar .sidebarBody {
+  height: calc(90% - 50px) !important;
+}
