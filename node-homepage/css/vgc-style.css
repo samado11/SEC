@@ -1529,7 +1529,7 @@ a.button.trade-in:after,
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    background-color: rgb(220, 0, 20);
+    background-color: rgb(20, 0, 20);
     display: inline-block;
     z-index: 1 !important;
     position: absolute;
@@ -2582,7 +2582,7 @@ div .node-teaser.node-accessory .rightColumn p {
     height: auto;
 }
 #block-views-news-block h2, #block-views-news-block-1 h2 {
-    color: #DC0014;
+    color: #0a0303;
     font-size: 18px;
     margin-top: -7px;
     margin-bottom: 7px;
